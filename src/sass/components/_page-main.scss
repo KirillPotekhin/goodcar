@@ -1,0 +1,15 @@
+.page-main {
+  padding-top: 106px;
+}
+
+@media (min-width: 540px) {
+  .page-main {
+    padding-top: 136px;
+  }
+}
+
+@media (min-width: 960px) {
+  .page-main {
+    padding-top: 160px;
+  }
+}
