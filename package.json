@@ -51,6 +51,7 @@
 		"build": "gulp"
 	},
 	"dependencies": {
+		"flatpickr": "^4.6.9",
 		"slick-carousel": "^1.8.1"
 	}
 }
