@@ -6,7 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<title>GoodCar39</title>
-	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+	<!-- <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	<link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -23,509 +25,53 @@
 					</a>
 				</div>
 				<div class="main-nav__wrapper">
-					<a class="main-nav__feedback">Связаться с нами</a>
+					<a class="main-nav__feedback">Забронировать</a>
 				</div>
 			</nav>
 		</div>
 	</header>
 	<main class="page-main">
-		<section class="container">
-			<div class="about-us">
-				<div class="about-us__pictures">
-					<div class="about-us__picture">
-						<img class="about-us__img" width="288px" height="288px" alt="Наши модели" src="img/slide1.jpg">
-					</div>
-					<div class="about-us__picture">
-						<img class="about-us__img" width="288px" height="288px" alt="Наши модели" src="img/slide2.jpg">
-					</div>
-					<div class="about-us__picture">
-						<img class="about-us__img" width="288px" height="288px" alt="Наши модели" src="img/slide3.jpg">
-					</div>
-				</div>
-				<div class="about-us__description">
-					<p class="about-us__title">Мы SHAPKIN - молодой Сибирский бренд-производитель, и наша концепция - уют,
-						тепло,
-						стиль и лаконичность! Наши шапки, шарфы и снуды - это универсальные стильные вещи для всей семьи. SHAPKIN -
-						это вещи для как для детей, так и для взрослых. Вещи, которые не только идеально впишутся в любой
-						гардероб,
-						но и согреют даже в Сибирские морозы. Наши вещи становятся любимыми! И мы предлагаем и Вам стать частью
-						семьи
-						SHAPKIN!</p>
-				</div>
-			</div>
-		</section>
-		<section class="catalog">
-			<div class="container">
-				<nav class="catalog__tabs tabs">
-					<a id="tabs__fall" class="tabs__btn tabs__btn--active" href="#">Осень / Весна</a>
-					<a id="tabs__winter" class="tabs__btn" href="#">Зима</a>
-					<a id="tabs__summer" class="tabs__btn" href="#">Лето</a>
-				</nav>
-			</div>
-			<div class="catalog__tabs-content">
-				<!-- <article class="catalog__item">
-					<div class="container">
-						<div class="catalog__item-pictures">
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide1.jpg">
-							</div>
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide2.jpg">
-							</div>
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide3.jpg">
-							</div>
-						</div>
-						<div class="catalog__item-description">
-							<table class="catalog__table">
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Модель:</td>
-									<td class="catalog__table-cell">Олимпия</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Тип:</td>
-									<td class="catalog__table-cell">Шапка</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Размер:</td>
-									<td class="catalog__table-cell">48 - 50 / 52 - 54 / 56-58</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Состав:</td>
-									<td class="catalog__table-cell">95% хлопок, 5% эластан</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Цвет:</td>
-									<td class="catalog__table-cell">Широкий выбор цветов, актуальные расцветки уточняются при заказе</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Розничная цена:</td>
-									<td class="catalog__table-cell">
-										<table>
-											<tr class="catalog__table-line">
-												<td class="catalog__table-cell catalog__table-cell--padding">48 - 50</td>
-												<td class="catalog__table-cell catalog__table-cell--padding">52 - 54 / 56-58</td>
-											</tr>
-											<tr class="catalog__table-line">
-												<td class="catalog__table-cell">600Р</td>
-												<td class="catalog__table-cell">700Р</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-				</article>
-				<article class="catalog__item catalog__item--reverse catalog__item--reverse-color">
-					<div class="container">
-						<div class="catalog__item-pictures">
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide1.jpg">
-							</div>
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide2.jpg">
-							</div>
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide3.jpg">
-							</div>
-						</div>
-						<div class="catalog__item-description">
-							<table class="catalog__table">
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Модель:</td>
-									<td class="catalog__table-cell">Олимпия</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Тип:</td>
-									<td class="catalog__table-cell">Шапка</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Размер:</td>
-									<td class="catalog__table-cell">48 - 50 / 52 - 54 / 56-58</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Состав:</td>
-									<td class="catalog__table-cell">95% хлопок, 5% эластан</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Цвет:</td>
-									<td class="catalog__table-cell">Широкий выбор цветов, актуальные расцветки уточняются при заказе</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Розничная цена:</td>
-									<td class="catalog__table-cell">
-										<table>
-											<tr class="catalog__table-line">
-												<td class="catalog__table-cell catalog__table-cell--padding">48 - 50</td>
-												<td class="catalog__table-cell catalog__table-cell--padding">52 - 54 / 56-58</td>
-											</tr>
-											<tr class="catalog__table-line">
-												<td class="catalog__table-cell">600Р</td>
-												<td class="catalog__table-cell">700Р</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-				</article>
-				<article class="catalog__item">
-					<div class="container">
-						<div class="catalog__item-pictures">
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide1.jpg">
-							</div>
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide2.jpg">
-							</div>
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide3.jpg">
-							</div>
-						</div>
-						<div class="catalog__item-description">
-							<table class="catalog__table">
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Модель:</td>
-									<td class="catalog__table-cell">Олимпия</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Тип:</td>
-									<td class="catalog__table-cell">Шапка</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Размер:</td>
-									<td class="catalog__table-cell">48 - 50 / 52 - 54 / 56-58</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Состав:</td>
-									<td class="catalog__table-cell">95% хлопок, 5% эластан</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Цвет:</td>
-									<td class="catalog__table-cell">Широкий выбор цветов, актуальные расцветки уточняются при заказе</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Розничная цена:</td>
-									<td class="catalog__table-cell">
-										<table>
-											<tr class="catalog__table-line">
-												<td class="catalog__table-cell catalog__table-cell--padding">48 - 50</td>
-												<td class="catalog__table-cell catalog__table-cell--padding">52 - 54 / 56-58</td>
-											</tr>
-											<tr class="catalog__table-line">
-												<td class="catalog__table-cell">600Р</td>
-												<td class="catalog__table-cell">700Р</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-				</article>
-				<article class="catalog__item catalog__item--reverse catalog__item--reverse-color">
-					<div class="container">
-						<div class="catalog__item-pictures">
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide1.jpg">
-							</div>
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide2.jpg">
-							</div>
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide3.jpg">
-							</div>
-						</div>
-						<div class="catalog__item-description">
-							<table class="catalog__table">
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Модель:</td>
-									<td class="catalog__table-cell">Олимпия</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Тип:</td>
-									<td class="catalog__table-cell">Шапка</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Размер:</td>
-									<td class="catalog__table-cell">48 - 50 / 52 - 54 / 56-58</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Состав:</td>
-									<td class="catalog__table-cell">95% хлопок, 5% эластан</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Цвет:</td>
-									<td class="catalog__table-cell">Широкий выбор цветов, актуальные расцветки уточняются при заказе</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Розничная цена:</td>
-									<td class="catalog__table-cell">
-										<table>
-											<tr class="catalog__table-line">
-												<td class="catalog__table-cell catalog__table-cell--padding">48 - 50</td>
-												<td class="catalog__table-cell catalog__table-cell--padding">52 - 54 / 56-58</td>
-											</tr>
-											<tr class="catalog__table-line">
-												<td class="catalog__table-cell">600Р</td>
-												<td class="catalog__table-cell">700Р</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-				</article> -->
-			</div>
-			<div class="catalog__tabs-content visually-hidden">
-				<!-- <article class="catalog__item">
-					<div class="container">
-						<div class="catalog__item-pictures">
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide1.jpg">
-							</div>
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide2.jpg">
-							</div>
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide3.jpg">
-							</div>
-						</div>
-						<div class="catalog__item-description">
-							<table class="catalog__table">
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Модель:</td>
-									<td class="catalog__table-cell">Олимпия</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Тип:</td>
-									<td class="catalog__table-cell">Шапка</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Размер:</td>
-									<td class="catalog__table-cell">48 - 50 / 52 - 54 / 56-58</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Состав:</td>
-									<td class="catalog__table-cell">95% хлопок, 5% эластан</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Цвет:</td>
-									<td class="catalog__table-cell">Широкий выбор цветов, актуальные расцветки уточняются при заказе</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Розничная цена:</td>
-									<td class="catalog__table-cell">
-										<table>
-											<tr class="catalog__table-line">
-												<td class="catalog__table-cell catalog__table-cell--padding">48 - 50</td>
-												<td class="catalog__table-cell catalog__table-cell--padding">52 - 54 / 56-58</td>
-											</tr>
-											<tr class="catalog__table-line">
-												<td class="catalog__table-cell">600Р</td>
-												<td class="catalog__table-cell">700Р</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-				</article> -->
-			</div>
-			<div class="catalog__tabs-content visually-hidden">
-				<!-- <article class="catalog__item">
-					<div class="container">
-						<div class="catalog__item-pictures">
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide1.jpg">
-							</div>
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide2.jpg">
-							</div>
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide3.jpg">
-							</div>
-						</div>
-						<div class="catalog__item-description">
-							<table class="catalog__table">
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Модель:</td>
-									<td class="catalog__table-cell">Олимпия</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Тип:</td>
-									<td class="catalog__table-cell">Шапка</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Размер:</td>
-									<td class="catalog__table-cell">48 - 50 / 52 - 54 / 56-58</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Состав:</td>
-									<td class="catalog__table-cell">95% хлопок, 5% эластан</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Цвет:</td>
-									<td class="catalog__table-cell">Широкий выбор цветов, актуальные расцветки уточняются при заказе</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Розничная цена:</td>
-									<td class="catalog__table-cell">
-										<table>
-											<tr class="catalog__table-line">
-												<td class="catalog__table-cell catalog__table-cell--padding">48 - 50</td>
-												<td class="catalog__table-cell catalog__table-cell--padding">52 - 54 / 56-58</td>
-											</tr>
-											<tr class="catalog__table-line">
-												<td class="catalog__table-cell">600Р</td>
-												<td class="catalog__table-cell">700Р</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-				</article>
-				<article class="catalog__item catalog__item--reverse catalog__item--reverse-color">
-					<div class="container">
-						<div class="catalog__item-pictures">
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide1.jpg">
-							</div>
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide2.jpg">
-							</div>
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide3.jpg">
-							</div>
-						</div>
-						<div class="catalog__item-description">
-							<table class="catalog__table">
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Модель:</td>
-									<td class="catalog__table-cell">Олимпия</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Тип:</td>
-									<td class="catalog__table-cell">Шапка</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Размер:</td>
-									<td class="catalog__table-cell">48 - 50 / 52 - 54 / 56-58</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Состав:</td>
-									<td class="catalog__table-cell">95% хлопок, 5% эластан</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Цвет:</td>
-									<td class="catalog__table-cell">Широкий выбор цветов, актуальные расцветки уточняются при заказе</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Розничная цена:</td>
-									<td class="catalog__table-cell">
-										<table>
-											<tr class="catalog__table-line">
-												<td class="catalog__table-cell catalog__table-cell--padding">48 - 50</td>
-												<td class="catalog__table-cell catalog__table-cell--padding">52 - 54 / 56-58</td>
-											</tr>
-											<tr class="catalog__table-line">
-												<td class="catalog__table-cell">600Р</td>
-												<td class="catalog__table-cell">700Р</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-				</article>
-				<article class="catalog__item">
-					<div class="container">
-						<div class="catalog__item-pictures">
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide1.jpg">
-							</div>
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide2.jpg">
-							</div>
-							<div class="catalog__item-picture">
-								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide3.jpg">
-							</div>
-						</div>
-						<div class="catalog__item-description">
-							<table class="catalog__table">
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Модель:</td>
-									<td class="catalog__table-cell">Олимпия</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Тип:</td>
-									<td class="catalog__table-cell">Шапка</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Размер:</td>
-									<td class="catalog__table-cell">48 - 50 / 52 - 54 / 56-58</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Состав:</td>
-									<td class="catalog__table-cell">95% хлопок, 5% эластан</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Цвет:</td>
-									<td class="catalog__table-cell">Широкий выбор цветов, актуальные расцветки уточняются при заказе</td>
-								</tr>
-								<tr class="catalog__table-line">
-									<td class="catalog__table-cell catalog__table-cell--font">Розничная цена:</td>
-									<td class="catalog__table-cell">
-										<table>
-											<tr class="catalog__table-line">
-												<td class="catalog__table-cell catalog__table-cell--padding">48 - 50</td>
-												<td class="catalog__table-cell catalog__table-cell--padding">52 - 54 / 56-58</td>
-											</tr>
-											<tr class="catalog__table-line">
-												<td class="catalog__table-cell">600Р</td>
-												<td class="catalog__table-cell">700Р</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-				</article> -->
-			</div>
-		</section>
 		<section class="feedback">
 			<div class="container">
 				<p class="feedback__title">Мы будем рады работать с Вами! Заполните простую форму обратной связи и мы свяжемся с
-					вами, чтобы уточнить детали.
+					вами.
 				</p>
 				<div class="feedback__form-wrapper">
 					<form class="feedback__form form" action="" method="post">
+						<fieldset class="form__fieldset form__fieldset--color form__car">
+							<label class="form__legend" for="car-model">Автомобиль:</label>
+							<div class="form__wrapper">
+								<div class="form__wrapper-car">
+									<select class="form__car-model" id="car-model" name="car-model">
+										<option value="polo-2020-at">VOLKSWAGEN POLO 2021 AT</option>
+										<option value="polo-2019-at">VOLKSWAGEN POLO 2017 AT</option>
+										<option value="polo-2020-mt">VOLKSWAGEN POLO 2019 MT</option>
+										<option value="polo-2019-mt">SKODA RAPID 2014-2016 AT</option>
+										<option value="polo-2019-mt">SKODA RAPID 2014-2016 MT</option>
+										<option value="polo-2019-mt">SKODA OCTAVIA 2012-2013 MT</option>
+										<option value="polo-2019-mt">HYUNDAY SOLARIS 2011-2014 AT</option>
+										<option value="polo-2019-mt">PEUGEOT 206CC Кабриолет AT</option>
+										<option value="polo-2019-mt">RENAULT LOGAN 2011-2013 MT</option>
+									</select>
+									<span class="form__car-model--arrow"></span>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="form__fieldset form__date-renta">
+							<label class="form__legend" for="date-renta-at">Срок аренды:</label>
+							<div class="form__wrapper flatpickr form__wrapper--flatpickr">
+								<input class="form__name-input form__date-input" name="date-renta-at" id="date-renta-at" required type="text" data-input placeholder="Укажите срок аренды*">
+								<input class="form__name-input form__date-input" name="date-renta-to" id="date-renta-to" required type="text" data-input placeholder="">
+						</div>
+						</fieldset>
 						<fieldset class="form__fieldset form__client">
 							<div class="form__wrapper">
 								<!-- <span class="form__legend">ФИО</span> -->
-								<div class="for__wrapper-mini">
+								<div class="form__wrapper-mini">
 									<div class="form__name">
-										<label class="form__legend" for="client-surname">Фамилия:</label>
+										<label class="form__legend" for="client-surname">ФИО:</label>
 										<input class="form__name-input" name="client-surname" id="client-surname" required
-											placeholder="Укажите вашу фамилию*">
-									</div>
-									<div class="form__name">
-										<label class="form__legend" for="client-name">Имя:</label>
-										<input class="form__name-input" name="client-name" id="client-name" required
-											placeholder="Введите ваше имя*">
-									</div>
-									<div class="form__name">
-										<label class="form__legend" for="client-middle-name">Отчество:</label>
-										<input class="form__name-input" name="client-middle-name" id="client-middle-name"
-											placeholder="Отчество, если желаете">
+											placeholder="Введите ваше ФИО*">
 									</div>
 								</div>
 							</div>
@@ -567,11 +113,644 @@
 				</div>
 			</div>
 		</section>
+		<section class="container">
+			<div class="about-us">
+				<!-- <div class="about-us__pictures">
+					<div class="about-us__picture">
+						<img class="about-us__img" width="288px" height="288px" alt="Наши модели" src="img/slide1.jpg">
+					</div>
+					<div class="about-us__picture">
+						<img class="about-us__img" width="288px" height="288px" alt="Наши модели" src="img/slide2.jpg">
+					</div>
+					<div class="about-us__picture">
+						<img class="about-us__img" width="288px" height="288px" alt="Наши модели" src="img/slide3.jpg">
+					</div>
+				</div> -->
+				<div class="about-us__description">
+					<p class="about-us__title">Автопрокат для туристов и таксистов</p>
+				</div>
+			</div>
+		</section>
+		<section class="catalog">
+			<div class="container">
+				<nav class="catalog__tabs tabs">
+					<a id="tabs__fall" class="tabs__btn tabs__btn--active" href="#">Осень / Весна</a>
+					<a id="tabs__winter" class="tabs__btn" href="#">Зима</a>
+					<a id="tabs__summer" class="tabs__btn" href="#">Лето</a>
+				</nav>
+			</div>
+			<div class="catalog__tabs-content catalog__slider">
+				<article class="catalog__item">
+					<div class="container">
+						<div class="catalog__item-pictures">
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши машины" src="img/slide1.jpg">
+							</div>
+						</div>
+						<div class="catalog__item-description">
+							<table class="catalog__table">
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Автомобиль:</td>
+									<td class="catalog__table-cell">Шкода Рапид 2021</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Трансмиссия:</td>
+									<td class="catalog__table-cell">Автоматическая</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Кондиционер:</td>
+									<td class="catalog__table-cell">Да</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Кол-во мест:</td>
+									<td class="catalog__table-cell">5</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Кол-во багажных мест:</td>
+									<td class="catalog__table-cell">5</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Тип привода:</td>
+									<td class="catalog__table-cell">Передний</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Кол-во дверей:</td>
+									<td class="catalog__table-cell">5</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Топливо:</td>
+									<td class="catalog__table-cell">АИ-95</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Расход по городу:</td>
+									<td class="catalog__table-cell">8л/100км</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Расход по трассе:</td>
+									<td class="catalog__table-cell">5л/100км</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Объём бака:</td>
+									<td class="catalog__table-cell">55л</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Стоимость аренды:</td>
+									<td class="catalog__table-cell">
+										<table>
+											<tr class="catalog__table-line">
+												<td class="catalog__table-cell catalog__table-cell--padding">1 - 5 дней</td>
+												<td class="catalog__table-cell catalog__table-cell--padding">6 - 14 дней</td>
+												<td class="catalog__table-cell catalog__table-cell--padding">14 и более дней</td>
+											</tr>
+											<tr class="catalog__table-line">
+												<td class="catalog__table-cell">600Р</td>
+												<td class="catalog__table-cell">700Р</td>
+												<td class="catalog__table-cell">800Р</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</article>
+				<article class="catalog__item">
+					<div class="container">
+						<div class="catalog__item-pictures">
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши машины" src="img/slide1.jpg">
+							</div>
+						</div>
+						<div class="catalog__item-description">
+							<table class="catalog__table">
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Автомобиль:</td>
+									<td class="catalog__table-cell">Фольцваген Поло 2019</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Трансмиссия:</td>
+									<td class="catalog__table-cell">Механическая</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Кондиционер:</td>
+									<td class="catalog__table-cell">Да</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Кол-во мест:</td>
+									<td class="catalog__table-cell">5</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Кол-во багажных мест:</td>
+									<td class="catalog__table-cell">5</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Тип привода:</td>
+									<td class="catalog__table-cell">Передний</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Кол-во дверей:</td>
+									<td class="catalog__table-cell">5</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Топливо:</td>
+									<td class="catalog__table-cell">АИ-95</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Расход по городу:</td>
+									<td class="catalog__table-cell">12л/100км</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Расход по трассе:</td>
+									<td class="catalog__table-cell">5л/100км</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Объём бака:</td>
+									<td class="catalog__table-cell">45л</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Стоимость аренды:</td>
+									<td class="catalog__table-cell">
+										<table>
+											<tr class="catalog__table-line">
+												<td class="catalog__table-cell catalog__table-cell--padding">1 - 5 дней</td>
+												<td class="catalog__table-cell catalog__table-cell--padding">6 - 14 дней</td>
+												<td class="catalog__table-cell catalog__table-cell--padding">14 и более дней</td>
+											</tr>
+											<tr class="catalog__table-line">
+												<td class="catalog__table-cell">1200Р</td>
+												<td class="catalog__table-cell">700Р</td>
+												<td class="catalog__table-cell">3400Р</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</article>
+				<article class="catalog__item">
+					<div class="container">
+						<div class="catalog__item-pictures">
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши машины" src="img/slide1.jpg">
+							</div>
+						</div>
+						<div class="catalog__item-description">
+							<table class="catalog__table">
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Автомобиль:</td>
+									<td class="catalog__table-cell">Ламборгини Галардо 2021</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Трансмиссия:</td>
+									<td class="catalog__table-cell">Автоматическая</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Кондиционер:</td>
+									<td class="catalog__table-cell">Да</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Кол-во мест:</td>
+									<td class="catalog__table-cell">2</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Кол-во багажных мест:</td>
+									<td class="catalog__table-cell">1</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Тип привода:</td>
+									<td class="catalog__table-cell">Передний</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Кол-во дверей:</td>
+									<td class="catalog__table-cell">3</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Топливо:</td>
+									<td class="catalog__table-cell">АИ-98</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Расход по городу:</td>
+									<td class="catalog__table-cell">35л/100км</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Расход по трассе:</td>
+									<td class="catalog__table-cell">15л/100км</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Объём бака:</td>
+									<td class="catalog__table-cell">60л</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Стоимость аренды:</td>
+									<td class="catalog__table-cell">
+										<table>
+											<tr class="catalog__table-line">
+												<td class="catalog__table-cell catalog__table-cell--padding">1 - 5 дней</td>
+												<td class="catalog__table-cell catalog__table-cell--padding">6 - 14 дней</td>
+												<td class="catalog__table-cell catalog__table-cell--padding">14 и более дней</td>
+											</tr>
+											<tr class="catalog__table-line">
+												<td class="catalog__table-cell">7000Р</td>
+												<td class="catalog__table-cell">16000Р</td>
+												<td class="catalog__table-cell">8000Р</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</article>
+				<!-- <article class="catalog__item catalog__item--reverse catalog__item--reverse-color">
+					<div class="container">
+						<div class="catalog__item-pictures">
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide1.jpg">
+							</div>
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide2.jpg">
+							</div>
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide3.jpg">
+							</div>
+						</div>
+						<div class="catalog__item-description">
+							<table class="catalog__table">
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Модель:</td>
+									<td class="catalog__table-cell">Олимпия</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Тип:</td>
+									<td class="catalog__table-cell">Шапка</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Размер:</td>
+									<td class="catalog__table-cell">48 - 50 / 52 - 54 / 56-58</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Состав:</td>
+									<td class="catalog__table-cell">95% хлопок, 5% эластан</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Цвет:</td>
+									<td class="catalog__table-cell">Широкий выбор цветов, актуальные расцветки уточняются при заказе</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Розничная цена:</td>
+									<td class="catalog__table-cell">
+										<table>
+											<tr class="catalog__table-line">
+												<td class="catalog__table-cell catalog__table-cell--padding">48 - 50</td>
+												<td class="catalog__table-cell catalog__table-cell--padding">52 - 54 / 56-58</td>
+											</tr>
+											<tr class="catalog__table-line">
+												<td class="catalog__table-cell">600Р</td>
+												<td class="catalog__table-cell">700Р</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</article>
+				<article class="catalog__item">
+					<div class="container">
+						<div class="catalog__item-pictures">
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide1.jpg">
+							</div>
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide2.jpg">
+							</div>
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide3.jpg">
+							</div>
+						</div>
+						<div class="catalog__item-description">
+							<table class="catalog__table">
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Модель:</td>
+									<td class="catalog__table-cell">Олимпия</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Тип:</td>
+									<td class="catalog__table-cell">Шапка</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Размер:</td>
+									<td class="catalog__table-cell">48 - 50 / 52 - 54 / 56-58</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Состав:</td>
+									<td class="catalog__table-cell">95% хлопок, 5% эластан</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Цвет:</td>
+									<td class="catalog__table-cell">Широкий выбор цветов, актуальные расцветки уточняются при заказе</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Розничная цена:</td>
+									<td class="catalog__table-cell">
+										<table>
+											<tr class="catalog__table-line">
+												<td class="catalog__table-cell catalog__table-cell--padding">48 - 50</td>
+												<td class="catalog__table-cell catalog__table-cell--padding">52 - 54 / 56-58</td>
+											</tr>
+											<tr class="catalog__table-line">
+												<td class="catalog__table-cell">600Р</td>
+												<td class="catalog__table-cell">700Р</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</article>
+				<article class="catalog__item catalog__item--reverse catalog__item--reverse-color">
+					<div class="container">
+						<div class="catalog__item-pictures">
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide1.jpg">
+							</div>
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide2.jpg">
+							</div>
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide3.jpg">
+							</div>
+						</div>
+						<div class="catalog__item-description">
+							<table class="catalog__table">
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Модель:</td>
+									<td class="catalog__table-cell">Олимпия</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Тип:</td>
+									<td class="catalog__table-cell">Шапка</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Размер:</td>
+									<td class="catalog__table-cell">48 - 50 / 52 - 54 / 56-58</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Состав:</td>
+									<td class="catalog__table-cell">95% хлопок, 5% эластан</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Цвет:</td>
+									<td class="catalog__table-cell">Широкий выбор цветов, актуальные расцветки уточняются при заказе</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Розничная цена:</td>
+									<td class="catalog__table-cell">
+										<table>
+											<tr class="catalog__table-line">
+												<td class="catalog__table-cell catalog__table-cell--padding">48 - 50</td>
+												<td class="catalog__table-cell catalog__table-cell--padding">52 - 54 / 56-58</td>
+											</tr>
+											<tr class="catalog__table-line">
+												<td class="catalog__table-cell">600Р</td>
+												<td class="catalog__table-cell">700Р</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</article> -->
+			</div>
+			<div class="catalog__tabs-content visually-hidden">
+				<!-- <article class="catalog__item">
+					<div class="container">
+						<div class="catalog__item-pictures">
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide1.jpg">
+							</div>
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide2.jpg">
+							</div>
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide3.jpg">
+							</div>
+						</div>
+						<div class="catalog__item-description">
+							<table class="catalog__table">
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Модель:</td>
+									<td class="catalog__table-cell">Олимпия</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Тип:</td>
+									<td class="catalog__table-cell">Шапка</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Размер:</td>
+									<td class="catalog__table-cell">48 - 50 / 52 - 54 / 56-58</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Состав:</td>
+									<td class="catalog__table-cell">95% хлопок, 5% эластан</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Цвет:</td>
+									<td class="catalog__table-cell">Широкий выбор цветов, актуальные расцветки уточняются при заказе</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Розничная цена:</td>
+									<td class="catalog__table-cell">
+										<table>
+											<tr class="catalog__table-line">
+												<td class="catalog__table-cell catalog__table-cell--padding">48 - 50</td>
+												<td class="catalog__table-cell catalog__table-cell--padding">52 - 54 / 56-58</td>
+											</tr>
+											<tr class="catalog__table-line">
+												<td class="catalog__table-cell">600Р</td>
+												<td class="catalog__table-cell">700Р</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</article> -->
+			</div>
+			<div class="catalog__tabs-content visually-hidden">
+				<!-- <article class="catalog__item">
+					<div class="container">
+						<div class="catalog__item-pictures">
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide1.jpg">
+							</div>
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide2.jpg">
+							</div>
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide3.jpg">
+							</div>
+						</div>
+						<div class="catalog__item-description">
+							<table class="catalog__table">
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Модель:</td>
+									<td class="catalog__table-cell">Олимпия</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Тип:</td>
+									<td class="catalog__table-cell">Шапка</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Размер:</td>
+									<td class="catalog__table-cell">48 - 50 / 52 - 54 / 56-58</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Состав:</td>
+									<td class="catalog__table-cell">95% хлопок, 5% эластан</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Цвет:</td>
+									<td class="catalog__table-cell">Широкий выбор цветов, актуальные расцветки уточняются при заказе</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Розничная цена:</td>
+									<td class="catalog__table-cell">
+										<table>
+											<tr class="catalog__table-line">
+												<td class="catalog__table-cell catalog__table-cell--padding">48 - 50</td>
+												<td class="catalog__table-cell catalog__table-cell--padding">52 - 54 / 56-58</td>
+											</tr>
+											<tr class="catalog__table-line">
+												<td class="catalog__table-cell">600Р</td>
+												<td class="catalog__table-cell">700Р</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</article>
+				<article class="catalog__item catalog__item--reverse catalog__item--reverse-color">
+					<div class="container">
+						<div class="catalog__item-pictures">
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide1.jpg">
+							</div>
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide2.jpg">
+							</div>
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide3.jpg">
+							</div>
+						</div>
+						<div class="catalog__item-description">
+							<table class="catalog__table">
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Модель:</td>
+									<td class="catalog__table-cell">Олимпия</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Тип:</td>
+									<td class="catalog__table-cell">Шапка</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Размер:</td>
+									<td class="catalog__table-cell">48 - 50 / 52 - 54 / 56-58</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Состав:</td>
+									<td class="catalog__table-cell">95% хлопок, 5% эластан</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Цвет:</td>
+									<td class="catalog__table-cell">Широкий выбор цветов, актуальные расцветки уточняются при заказе</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Розничная цена:</td>
+									<td class="catalog__table-cell">
+										<table>
+											<tr class="catalog__table-line">
+												<td class="catalog__table-cell catalog__table-cell--padding">48 - 50</td>
+												<td class="catalog__table-cell catalog__table-cell--padding">52 - 54 / 56-58</td>
+											</tr>
+											<tr class="catalog__table-line">
+												<td class="catalog__table-cell">600Р</td>
+												<td class="catalog__table-cell">700Р</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</article>
+				<article class="catalog__item">
+					<div class="container">
+						<div class="catalog__item-pictures">
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide1.jpg">
+							</div>
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide2.jpg">
+							</div>
+							<div class="catalog__item-picture">
+								<img class="catalog__item-img" width="288px" height="288px" alt="Наши модели" src="img/slide3.jpg">
+							</div>
+						</div>
+						<div class="catalog__item-description">
+							<table class="catalog__table">
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Модель:</td>
+									<td class="catalog__table-cell">Олимпия</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Тип:</td>
+									<td class="catalog__table-cell">Шапка</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Размер:</td>
+									<td class="catalog__table-cell">48 - 50 / 52 - 54 / 56-58</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Состав:</td>
+									<td class="catalog__table-cell">95% хлопок, 5% эластан</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Цвет:</td>
+									<td class="catalog__table-cell">Широкий выбор цветов, актуальные расцветки уточняются при заказе</td>
+								</tr>
+								<tr class="catalog__table-line">
+									<td class="catalog__table-cell catalog__table-cell--font">Розничная цена:</td>
+									<td class="catalog__table-cell">
+										<table>
+											<tr class="catalog__table-line">
+												<td class="catalog__table-cell catalog__table-cell--padding">48 - 50</td>
+												<td class="catalog__table-cell catalog__table-cell--padding">52 - 54 / 56-58</td>
+											</tr>
+											<tr class="catalog__table-line">
+												<td class="catalog__table-cell">600Р</td>
+												<td class="catalog__table-cell">700Р</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</article> -->
+			</div>
+		</section>
 	</main>
 	<footer class="page-footer">
 		<div class="container">
 			<a class="page-footer__logo" href="#">
-				<img class="page-footer__logo-img" width="130" height="18" alt="logo" src="img/logo-letters.svg">
+				<!-- <img class="page-footer__logo-img" width="130" height="18" alt="logo" src="img/logo-letters.svg"> -->
 			</a>
 			<div class="page-footer__social social">
 				<ul class="social__list">
@@ -592,7 +771,7 @@
 			<div class="page-footer__copyright copyright">
 				<a class="copyright__link" href="#">
 					<span class="copyright__text">Разработано</span>
-					<img class="copyright__link-img" width="33" height="66" alt="logo" src="img/logo-symbol.svg">
+					<!-- <img class="copyright__link-img" width="33" height="66" alt="logo" src="img/logo-symbol.svg"> -->
 				</a>
 			</div>
 		</div>
@@ -612,7 +791,7 @@
 				fade: true,
 				cssEase: 'linear'
 			});
-			$('.catalog__item-pictures').slick({
+			$('.catalog__slider').slick({
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				dots: true,
@@ -622,6 +801,10 @@
 			});
 		});
 	</script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> -->
+	<script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+	<script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+	<script src="https://npmcdn.com/flatpickr/dist/plugins/rangePlugin.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 

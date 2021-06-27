@@ -7,10 +7,19 @@
 .form__legend {
   margin-top: -4px;
   display: block;
-  width: 100px;
+  width: 150px;
   background: transparent;
   line-height: 18px;
   font-weight: 600;
+}
+
+.form__wrapper--flatpickr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__date-renta {
+  width: 98%;
 }
 
 .form__name {
@@ -26,7 +35,7 @@
   font-weight: 600;
 }
 
-.form__name-input, .form__number-input, .form__email-input {
+.form__name-input, .form__number-input, .form__email-input, .form__car-model {
   margin-top: 12px;
   padding: 8px;
   width: 95%;
@@ -38,7 +47,40 @@
   outline: none;
 
   &:focus {
-    border: 1px solid red;
+    border: 1px solid #05588f;
+  }
+}
+
+.form__date-input {
+  width: 45%;
+}
+
+.form__car {
+  width: 98%;
+}
+
+.form__wrapper-car {
+  position: relative;
+  margin-top: 12px;
+}
+
+.form__car-model {
+  width: 100%;
+  margin-top: 0;
+  padding-right: 23px;
+  appearance: none;
+  &--arrow {
+    position: absolute;
+    top: 50%;
+    right: 4px;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-top: 10px solid #ffffff;
+    pointer-events: none;
   }
 }
 

@@ -1,6 +1,18 @@
+@font-face{
+  font-family: 'Days';
+  src: url('../fonts/Days-webfont.eot');
+  src: url('../fonts/Days-webfont.eot?iefix') format('eot'),
+  url('../fonts/Days-webfont.woff') format('woff'),
+  url('../fonts/Days-webfont.ttf') format('truetype'),
+  url('../fonts/Days-webfont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .main-nav {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .main-nav__wrapper {
@@ -9,11 +21,16 @@
 }
 
 .main-nav__logo {
+  padding: 16px 16px 16px 0px;
+  font-family: "Days", "OpenSans", sans-serif;
   text-decoration: none;
-  color: white;
   font-size: 32px;
   line-height: 1;
-  padding: 16px 16px 16px 0px;
+  color: #000000;
+}
+
+.main-nav__logo--sub {
+  font-size: 26px;
 }
 
 // .main-nav__logo-img {
@@ -29,6 +46,14 @@
   font-size: 20px;
   line-height: 1.2;
   cursor: pointer;
+  padding: 18px;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  background-color: #05588f;
+  color: #ffffff;
+  &:hover {
+    border: 1px solid #05588f;
+  }
 }
 
 @media (min-width: 375px) {

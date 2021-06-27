@@ -20,6 +20,7 @@
     width: 100%;
     height: auto;
     border-radius: 16px;
+    background-color: grey;
   }
   
   .catalog__table {
@@ -36,7 +37,7 @@
     }
   
     & + .catalog__table-cell {
-      padding-left: 16px;
+      padding-left: 13px;
     }
   }
 
